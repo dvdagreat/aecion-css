@@ -82,6 +82,12 @@
 	@include flex.wrap("wrap-reverse");
 }
 
+/* flex children properties */
+
 .equal-children > * {
 	flex-basis: 100%;
+}
+
+.equal-gap > * {
+	margin: 5px;
 }

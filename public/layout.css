@@ -1,6 +1,7 @@
 /* Flex */
 .flex {
   display: flex;
+  padding: 5px;
 }
 
 /* Flex Direction */
@@ -75,8 +76,13 @@
   flex-wrap: wrap-reverse;
 }
 
+/* flex children properties */
 .equal-children > * {
   flex-basis: 100%;
+}
+
+.equal-gap > * {
+  margin: 5px;
 }
 
 /*# sourceMappingURL=layout.css.map */

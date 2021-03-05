@@ -1,5 +1,6 @@
 @mixin init() {
 	display: flex;
+	padding: 5px;
 }
 
 @mixin dir($dir: "row") {
