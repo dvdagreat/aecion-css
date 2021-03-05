@@ -1,27 +1,83 @@
-@mixin flex($dir: 1) {
-	display: flex;
-}
+@use '_flex_mixins' as flex;
 
-@mixin flex-dir($dir: "row") {
-	flex-direction: unquote($dir);
-}
+/* Flex */
 
 .flex {
-	@include flex();
+	@include flex.init();
 }
 
-.flex-row {
-	@include flex-dir();
+/* Flex Direction */
+
+.f-row {
+	@include flex.dir();
 }
 
-.flex-row-reverse {
-	@include flex-dir("row-reverse");
+.f-row-rev {
+	@include flex.dir("row-reverse");
 }
 
-.flex-column {
-	@include flex-dir("column");
+.f-col {
+	@include flex.dir("column");
 }
 
-.flex-column-reverse {
-	@include flex-dir("column-reverse");
+.f-col-rev {
+	@include flex.dir("column-reverse");
+}
+
+/* Flex Justify */
+
+.j-center {
+	@include flex.justify();
+}
+
+.j-space-around {
+	@include flex.justify("space-around");
+}
+
+.j-space-evenly {
+	@include flex.justify("space-evenly");
+}
+
+.j-space-between {
+	@include flex.justify("space-between");
+}
+
+.j-start {
+	@include flex.justify("flex-start");
+}
+
+.j-end {
+	@include flex.justify("flex-end");
+}
+
+/* flex align */
+
+.a-center {
+	@include flex.align();
+}
+
+.a-stretch {
+	@include flex.align("stretch");
+}
+
+.a-start {
+	@include flex.align("flex-start");
+}
+
+.a-end {
+	@include flex.align("flex-end");
+}
+
+/* flex wrap */
+
+.wrap {
+	@include flex.wrap("wrap");
+}
+
+.wrap-none {
+	@include flex.wrap("nowrap");
+}
+
+.wrap-rev {
+	@include flex.wrap("wrap-reverse");
 }

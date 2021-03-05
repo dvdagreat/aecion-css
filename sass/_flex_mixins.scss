@@ -1,0 +1,19 @@
+@mixin init() {
+	display: flex;
+}
+
+@mixin dir($dir: "row") {
+	flex-direction: unquote($dir);
+}
+
+@mixin justify($mode: "center") {
+	justify-content: unquote($mode);
+}
+
+@mixin align($mode: "center") {
+	align-items: unquote($mode);
+}
+
+@mixin wrap($mode: "wrap") {
+	flex-wrap: unquote($mode);
+}
