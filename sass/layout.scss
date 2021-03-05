@@ -2,6 +2,26 @@
 	display: flex;
 }
 
+@mixin flex-dir($dir: "row") {
+	flex-direction: unquote($dir);
+}
+
 .flex {
 	@include flex();
+}
+
+.flex-row {
+	@include flex-dir();
+}
+
+.flex-row-reverse {
+	@include flex-dir("row-reverse");
+}
+
+.flex-column {
+	@include flex-dir("column");
+}
+
+.flex-column-reverse {
+	@include flex-dir("column-reverse");
 }
