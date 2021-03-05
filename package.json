@@ -1,0 +1,22 @@
+{
+  "name": "aecion-css",
+  "version": "1.0.0",
+  "description": "a lightweight css framework for making great layouts using flexboxes and sass",
+  "main": "index.js",
+  "scripts": {
+    "sass":"sass sass:public",
+    "sass-watch":"sass sass:public --watch"
+
+  },
+  "keywords": [
+    "css-framework",
+    "custom-css",
+    "utiliity",
+    "frontend-framework"
+  ],
+  "author": "divyesh ladva",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.32.8"
+  }
+}
