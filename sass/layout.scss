@@ -1,0 +1,10 @@
+@mixin flex($dir: 1) {
+  display: flex;
+  if($dir == 2) {
+    flex-direction: row;
+  }
+  else {
+    flex-direction: $dir
+  }
+  
+}
