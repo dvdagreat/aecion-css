@@ -81,3 +81,7 @@
 .wrap-rev {
 	@include flex.wrap("wrap-reverse");
 }
+
+.equal-children > * {
+	flex-basis: 100%;
+}
