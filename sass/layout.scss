@@ -6,6 +6,18 @@
 	@include flex.init();
 }
 
+.inner-gap-5 {
+	padding: 5px;
+}
+
+.inner-gap-10 {
+	padding: 10px;
+}
+
+.inner-gap-20 {
+	padding: 20px;
+}
+
 /* Flex Direction */
 
 .f-row {
